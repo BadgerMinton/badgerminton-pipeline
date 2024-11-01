@@ -24,7 +24,7 @@ def upload_to_github(file_path: str, commit_message: str):
             existing_file = repo.get_contents(
                 file_path
             )  # Replace with the name of the file in the repo
-            print("Data exists! Uploading...")
+            print("File exists! Uploading...")
 
             # ignore if it is a list
             if isinstance(existing_file, list):
@@ -40,7 +40,7 @@ def upload_to_github(file_path: str, commit_message: str):
             )
             print(f"Updated {file_path} in {repo_name}!")
         except Exception:
-            print("Data does not exist yet. Creating a new file...")
+            print("File does not exist yet. Creating a new file...")
             # Upload the file to the repository
             repo.create_file(
                 path=file_path,  # Path where the file will be stored in the repo
