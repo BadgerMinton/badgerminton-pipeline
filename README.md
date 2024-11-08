@@ -20,3 +20,4 @@ Logic to clean data, compute ELO scores, and store them in [badgerminton-data](h
 
 4. Run cells in [clean.ipynb](./clean.ipynb) to clean up data.
 5. Run cells in [calculate.ipynb](./calculate.ipynb) to calculate the ELO scores.
+6. Optional: Run cells in [colocate.ipynb](./colocate.ipynb) to do further exploration & analysis on the results.
